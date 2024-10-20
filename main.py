@@ -1,25 +1,42 @@
-newDict = {
+thisdict = {
   "brand": "Ford",
   "model": "Mustang",
   "year": 1964
 }
+print(thisdict)
 
-print(newDict)
+print(thisdict["brand"])
 
-print(newDict["brand"])
+print(len(thisdict))
 
-newDict["year"] = 2018
+print(type(thisdict))
 
-print(newDict)
+x = thisdict["model"]
 
-newDict["color"] = "red"
-print(newDict)
+x = thisdict.get("model")
 
-newDict.pop("model")
-print(newDict)
+x = thisdict.keys()
 
-otherDict = {}
+thisdict["year"] = 2018
 
-otherDict = {i: i for i in range(10)}
+thisdict.update({"year": 2020})
 
-print(otherDict)
+thisdict["color"] = "red"
+print(thisdict)
+
+thisdict.update({"color": "red"})
+
+thisdict.pop("model")
+print(thisdict)
+
+thisdict.popitem()
+print(thisdict)
+
+del thisdict["brand"]
+print(thisdict)
+
+a = {b: b**2 for b in range(5)}
+print(a)
+
+a = dict.fromkeys(range(5), True)
+print(a)
