@@ -1,0 +1,28 @@
+.edit_post{
+    width: 363px;
+    margin: auto;
+}
+
+.post-form{
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.post-form textarea, input{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.post-form label{
+    display: block;
+}
+
+.post-form button:hover{
+    color: white;
+    background-color: black;
+}
+
+.btn{
+    border: 2px solid black;
+}
